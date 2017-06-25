@@ -1,0 +1,190 @@
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><%= image_tag("logo.png")%></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Internship</a></li>
+          <li><a href="#home">Profile</a></li>
+          <li><a href="#band">Settings</a></li>
+          <li><a href="#tour" data-toggle="modal" data-target="#edit" >Sign Out</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+        <div class="container-fluid">
+
+          <div class="move">
+           <div class="panel panel-success" style="border:2px solid #d6e9c6;">
+          <div class="panel-heading">
+              <h1 style="text-align:center;">User Profile</h1>
+          </div>
+
+          <div class="panel-body" style="background-color: #f0f0f0;">
+          
+            <div class="row">
+              <div class="col-md-4">
+              <div class="card card-user">
+                <div class="image">
+                      <%= image_tag("1.jpg") %>
+                </div>
+
+                <div class="content">
+                    <div class="author">
+                        <%= image_tag("cico.jpg", class: "avatar border-white") %>
+                      <h3 class="title">Matenga Ivan Ogarubo<br />
+                      <h4>Position: Intern<h4>
+                      <h4>Department: IT <h4>
+                      <p><a href="#">Muni University</a></p>
+                      </h3>
+                    </div>
+                    <p class="description text-center">
+                      
+                      </p>
+
+                      <hr class="pd-10">
+                  <div class="row">
+                  <div class="col-sm-12 profile-actions text-left">
+                  
+                    <button type="button" class="btn1 btn-primary btn-sm"><i class="fa fa-envelope"></i> Send Message</button>
+                    
+                     <button type="button" class="btn1 btn-primary btn-sm"><i class="fa fa-envelope"></i>Download</button>
+
+                     <button type="button" class="btn1 btn-primary btn-sm"><i class="fa fa-envelope"></i>Upload</button>
+
+                    <button type="button" class="btn1 btn-success btn-sm"><i class="fa fa-check"></i>Messages</button>
+
+                    <span style="color:gray; font-size:12px;"><i>3 Weeks left</i></span>
+                  </div>
+                </div>
+              </div>
+                    
+              </div>
+            </div>
+      
+            <div class="col-md-8">
+              <div class="card"> 
+                <div class="header"><h4>Timeline (Profile)<hr class="pd-10"></h4>
+                    <h3>About</h3>
+                    <div class="row">
+                      <div class="col-md-2">Name</div>
+                      <div class="col-md-4">
+                        <span style="color:gray; font-size:16px;">Matenga Ivan Ogarubo</span>
+                      </div>
+
+                      <div class="col-md-2">Email</div>
+                      <div class="col-md-4">
+                        <span style="color:gray; font-size:16px;">mivan774@gmail.com</span>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-2">Institution</div>
+                      <div class="col-md-4">
+                        <span style="color:gray; font-size:16px;">Muni University</span>
+                      </div>
+
+                      <div class="col-md-2">Phone Number</div>
+                      <div class="col-md-4">
+                        <span style="color:gray; font-size:16px;">(+256) 773 996 470</span>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-2">Course</div>
+                      <div class="col-md-4">
+                        <span style="color:gray; font-size:16px;">BSc Information Systems</span>
+                      </div>
+
+                      <div class="col-md-2">Satus</div>
+                      <div class="col-md-4">
+                        <span style="color:gray; font-size:16px;">Intern</span>
+                      </div>
+
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-md-2">Year</div>
+                      <div class="col-md-4">
+                        <span style="color:gray; font-size:16px;"> III </span>
+                      </div>
+
+                      <div class="col-md-2">Interest (Area of Expertise)</div>
+                      <div class="col-md-4">
+                        <span style="color:gray; font-size:16px;"> UI/UX Development </span>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-2">Skills</div>
+                      <div class="col-md-4">
+                        <span style="color:gray; font-size:16px;">Autocad, Rails, Ionic, Python, php, AI </span>
+                      </div>
+                    </div>
+
+                    <hr class="pd-10">
+                    <h4>Profile Edit</h4>
+                     <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control border-input" placeholder="Name" type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control border-input" placeholder="Course" type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control border-input" placeholder="Instituion" type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control border-input" placeholder="Skills" type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control border-input" placeholder="Area of Expertise" type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>

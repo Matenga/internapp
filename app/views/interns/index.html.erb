@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+    <div class="container-fluid">
+      <div class="panel panel-success" style="border:2px solid #d6e9c6;">
+        <div class="panel-heading">
+
+            <h1 style="text-align:center;">Interns at Joadah & iDealinks Ltd</h1><%= link_to 'New Intern', new_intern_path, class: "btn btn-primary" %>
+            <hr style="width:100%; color: #ddd; background-color: #ddd;">
+
+             
+              <p id="notice"><%= notice %></p>
+          </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+
+        <div id="no-more-tables">
+            <table class="col-md-12 table-bordered table-striped table-condensed cf">
+            <thead class="cf">
+              <tr>
+                <tr>
+                  <th>Fullname</th>
+                  <th>Othername</th>
+                  <th>Profilepic</th>
+                  <th>Institution</th>
+                  <th>Registrationnumber</th>
+                  <th>Program</th>
+                  <th>Year</th>
+                  <th>Gender</th>
+                  <th>Emailadress</th>
+                 
+                  <th colspan="3"> </th>
+                </tr>
+              </tr>
+            </thead>
+
+            <tbody>
+              <% @interns.each do |intern| %>
+                <tr>
+                  <td><%= intern.fullName %></td>
+                  <td><%= intern.otherName %></td>
+                  <td><%= intern.profilePic %></td>
+                  <td><%= intern.institution %></td>
+                  <td><%= intern.registrationNumber %></td>
+                  <td><%= intern.program %></td>
+                  <td><%= intern.year %></td>
+                  <td><%= intern.gender %></td>
+                  <td><%= intern.emailAdress %></td>
+                  
+                  <td><%= link_to 'Show', intern %></td>
+                  <td><%= link_to 'Edit', edit_intern_path(intern) %></td>
+                  <td><%= link_to 'Destroy', intern, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </tr>
+              <% end %>
+            </tbody>
+
+            
+          </table>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+   
+
+
+

@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @intern.fullName %>
+</p>
+
+<p>
+  <strong>Othername:</strong>
+  <%= @intern.otherName %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @intern.institution %>
+</p>
+
+<p>
+  <strong>Registrationnumber:</strong>
+  <%= @intern.registrationNumber %>
+</p>
+
+<p>
+  <strong>Program:</strong>
+  <%= @intern.program %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @intern.year %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @intern.gender %>
+</p>
+
+<p>
+  <strong>Emailadress:</strong>
+  <%= @intern.emailAdress %>
+</p>
+
+<p>
+  <strong>Profilepic:</strong>
+  <%= image_tag (@intern.image_url.to_s) %>
+ 
+
+</p>
+
+<%= link_to 'Edit', edit_intern_path(@intern) %> |
+<%= link_to 'Back', interns_path %>

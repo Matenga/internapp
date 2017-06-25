@@ -1,0 +1,136 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.main-panel > .content {
+    padding: 30px 15px;
+    min-height: calc(100% - 123px);
+}
+
+body{
+
+	background-color: #f0f0f0;
+}
+h2,h3{
+
+	color: RGBA(6, 6, 6, 0.47);
+}
+
+h4, .h4 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: RGBA(6, 6, 6, 0.47) ;
+
+}
+
+.card {
+    border-radius: 6px;
+    box-shadow: 0 3px 4px rgba(81, 80, 78, 0.62);;
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+	width: 100%;
+}
+
+.card-user .image {
+    border-radius: 8px 8px 0 0;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.card .image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.card-user .content {
+    min-height: 200px;
+}
+.card .content {
+    padding: 15px 15px 10px 15px;
+}
+
+.card-user .author {
+    text-align: center;
+    text-transform: none;
+    margin-top: -65px;
+}
+.card .author {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.card-user .avatar.border-white {
+    border: 5px solid #FFFFFF;
+}
+.card-user .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.card .avatar {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+    width: -moz-available;
+}
+
+.card .header {
+padding: 5px 0px 20px 20px;
+}
+
+.user-button .btn {
+    margin: 5px 9px;
+}
+.btn-primary {
+    background-color: #4A525F;
+    border-color: #4A525F;
+    color: #FFFFFF;
+}
+.btn {
+    border-radius: 2px;
+}
+
+
+
+.row1{
+	width:100%;
+}
+
+.move{
+	margin-top: 10px
+}
+
+.pd-10 {
+    padding: 10px !important;
+    width: 93%;
+}
