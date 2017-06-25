@@ -2,13 +2,15 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
 
-validates :emailAddress, presence: true,
-                      length: { minimum: 10 }
-validates :password, presence: true,
-                     length: { minimum: 6 }
+	has_many :interns
+	
+	validates :email, presence: true,
+	                      length: { minimum: 10 }
+	validates :password, presence: true,
+	                     length: { minimum: 6 }
 
-devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+	devise :database_authenticatable, :registerable,
+	         :recoverable, :rememberable, :trackable, :validatable
 
 
 end
